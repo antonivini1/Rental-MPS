@@ -1,4 +1,4 @@
-abstract class Tape {
+abstract class Tape implements Rentable {
 
     private String title;
     public Tape(String title) {
@@ -9,6 +9,9 @@ abstract class Tape {
         return title;
     }
 
-    public abstract float getPrice(int daysRented);
+    public abstract double getPrice(int daysRented);
+    public double getBonus(int daysRented) {
+        return 1;
+    }
 }
 

@@ -5,7 +5,7 @@ public class KidsTape extends Tape {
     }
 
     @Override
-    public float getPrice(int daysRented) {
+    public double getPrice(int daysRented) {
         float price = 1.5F;
         if (daysRented > 3) {
             price += (daysRented - 3) * 1.5;

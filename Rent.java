@@ -1,18 +1,22 @@
 public class Rent {
-  private Tape tape;
-  private int daysRented;
+    private Rentable rentable;
+    private int daysRented;
 
-  public Rent(Tape tape, int daysRented) {
-    this.tape = tape;
-    this.daysRented = daysRented;
-  }
+    public Rent(Rentable rentable, int daysRented) {
+        this.rentable = rentable;
+        this.daysRented = daysRented;
+    }
 
-  public Tape getTape() {
-    return tape;
-  }
+    public double calculateCost() {
+        return rentable.getPrice(daysRented);
+    }
 
-  public int getDaysRented() {
-    return daysRented;
-  }
+    public Rentable getRentable() {
+        return rentable;
+    }
+
+    public int getDaysRented() {
+        return daysRented;
+    }
 }
 

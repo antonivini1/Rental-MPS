@@ -4,7 +4,7 @@ public class NormalTape extends Tape {
     }
 
     @Override
-    public float getPrice(int daysRented) {
+    public double getPrice(int daysRented) {
         float price = 2;
         if (daysRented > 2) {
             price += (daysRented - 2) * 1.5;
