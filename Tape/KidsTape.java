@@ -1,3 +1,5 @@
+package Tape;
+
 public class KidsTape extends Tape {
 
     public KidsTape(String title) {

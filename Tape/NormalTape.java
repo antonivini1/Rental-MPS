@@ -1,3 +1,5 @@
+package Tape;
+
 public class NormalTape extends Tape {
     public NormalTape(String title) {
         super(title);

@@ -1,3 +1,7 @@
+package Order;
+
+import Rent.Rent;
+
 import java.util.*;
 
 public class Order {

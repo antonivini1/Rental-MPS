@@ -1,3 +1,7 @@
+package Tape;
+
+import Rent.Rentable;
+
 abstract class Tape implements Rentable {
 
     private String title;

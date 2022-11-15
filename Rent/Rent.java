@@ -1,3 +1,5 @@
+package Rent;
+
 public class Rent {
     private Rentable rentable;
     private int daysRented;

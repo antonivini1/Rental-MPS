@@ -1,3 +1,7 @@
+package Order;
+
+import Rent.Rent;
+
 public class OrderConverter {
     private Order order;
 

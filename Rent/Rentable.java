@@ -1,3 +1,5 @@
+package Rent;
+
 public interface Rentable {
 
     public String getTitle();

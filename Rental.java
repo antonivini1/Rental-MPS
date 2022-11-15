@@ -1,3 +1,11 @@
+import Order.Order;
+import Rent.Rent;
+import Tape.KidsTape;
+import Tape.NormalTape;
+import Tape.ReleaseTape;
+import Order.Client;
+import Order.OrderConverter;
+
 public class Rental {
   public static void main(String[] args) {
     Client c1 = new Client("Juliana");
