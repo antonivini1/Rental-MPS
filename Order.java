@@ -31,7 +31,7 @@ public class Order {
     public double getBonusPoints() {
         double bonusPoints = 0;
         for (Rent rent : rents) {
-            bonusPoints += rent.calculateCost();
+            bonusPoints += rent.calculateBonus();
         }
         return bonusPoints;
     }

@@ -1,14 +1,15 @@
 public class Rental {
   public static void main(String[] args) {
     Client c1 = new Client("Juliana");
+    Order order = new Order(c1);
 
-    c1.adicionaRent(new Rent(new Tape("O Exorcista", Tape.NORMAL), 3));
-    c1.adicionaRent(new Rent(new Tape("Men in Black                  ", Tape.NORMAL), 2));
-    c1.adicionaRent(new Rent(new Tape("Jurassic Park III             ", Tape.LANCAMENTO), 3));
-    c1.adicionaRent(new Rent(new Tape("Planeta dos Macacos           ", Tape.LANCAMENTO), 4));
-    c1.adicionaRent(new Rent(new Tape("Pateta no Planeta dos Macacos ", Tape.INFANTIL), 10));
-    c1.adicionaRent(new Rent(new Tape("O Rei Leao                    ", Tape.INFANTIL), 30));
+    order.addRent(new Rent(new NormalTape("O Exorcista"), 3));
+    order.addRent(new Rent(new NormalTape("Men in Black"), 2));
+    order.addRent(new Rent(new ReleaseTape("Jurassic Park III"), 3));
+    order.addRent(new Rent(new ReleaseTape("Planeta dos Macacos"), 4));
+    order.addRent(new Rent(new KidsTape("Pateta no Planeta dos Macacos"), 10));
+    order.addRent(new Rent(new KidsTape("O Rei Leao"), 30));
 
-    System.out.println(c1.extrato());
+    System.out.println(new OrderConverter(order).asString());
   }
 }

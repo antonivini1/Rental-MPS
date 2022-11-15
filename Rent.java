@@ -11,6 +11,10 @@ public class Rent {
         return rentable.getPrice(daysRented);
     }
 
+    public double calculateBonus() {
+        return rentable.getBonus(daysRented);
+    }
+
     public Rentable getRentable() {
         return rentable;
     }
